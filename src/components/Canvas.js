@@ -5,7 +5,7 @@ const Canvas = () => {
   const { height, width } = useWindowDimensions();
 
   return (
-    <canvas style={{width: {width}, height: {height}}}>
+    <canvas style={{width: `${width}px`, height: `${height}px`}}>
       Canvas, here.
     </canvas>
   )

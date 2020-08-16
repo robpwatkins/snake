@@ -13,6 +13,11 @@ import './App.css';
 
 const App = () => {
   const canvasRef = useRef();
+  const [snake, setSnake] = useState(SNAKE_START);
+  const [apple, setApple] = useState(APPLE_START);
+  const [dir, setDir] = useState([0, -1]);
+  const [speed, setSpeed] = useState(null);
+  const [gameOver, setGameOver] = useState(false);
 
   const startGame = () => {
 

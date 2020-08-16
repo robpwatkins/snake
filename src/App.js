@@ -42,7 +42,9 @@ const App = () => {
   }
 
   const checkAppleCollision = () => {
-
+    if (apple[0] === snake[0][0] && apple[1] === snake[0][1]) {
+      console.log('heyoo');
+    }
   }
 
   const gameLoop = () => {
@@ -62,6 +64,7 @@ const App = () => {
     snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
     context.fillStyle = 'cyan';
     context.fillRect(apple[0], apple[1], 1, 1);
+    checkAppleCollision();
   }, [snake, apple, gameOver])
 
   useInterval(() => gameLoop(), speed);

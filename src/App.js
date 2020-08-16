@@ -11,6 +11,52 @@ import {
 
 import './App.css';
 
-const App = () => <div>Snake Game</div>
+const App = () => {
+  const canvasRef = useRef();
+
+  const startGame = () => {
+
+  }
+
+  const endGame = () => {
+
+  }
+
+  const moveSnake = () => {
+
+  }
+
+  const createApple = () => {
+
+  }
+
+  const checkCollision = () => {
+
+  }
+
+  const checkAppleCollision = () => {
+
+  }
+
+  const gameLoop = () => {
+
+  }
+
+  // useEffect(() => {
+
+  // }, [snake, apple, gameOver])
+
+  return (
+    <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
+      <canvas 
+        ref={canvasRef}
+        width={`${CANVAS_SIZE[0]}px`}
+        height={`${CANVAS_SIZE[1]}px`}
+      />
+      {/* {gameOver && <div>GAME OVER!</div>} */}
+      <button>START GAME</button>
+    </div>
+  )
+}
 
 export default App;

@@ -47,9 +47,10 @@ const App = () => {
 
   }
 
-  // useEffect(() => {
-
-  // }, [snake, apple, gameOver])
+  useEffect(() => {
+    const c = canvasRef.current.getContext('2d');
+    c.fillRect(100, 100, 100, 100);
+  }, [snake, apple, gameOver])
 
   return (
     <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>

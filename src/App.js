@@ -98,7 +98,7 @@ const App = () => {
         height={`${CANVAS_SIZE[1]}px`}
       />
       {gameOver && <div>GAME OVER!</div>}
-      <button onClick={startGame}>START GAME</button>
+      <button onClick={startGame}>START GAMeeeE</button>
     </div>
   )
 }

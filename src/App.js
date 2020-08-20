@@ -85,6 +85,9 @@ const App = () => {
     context.setTransform(SCALE, 0, 0, SCALE, 0, 0);
     context.clearRect(0, 0, CANVAS_SIZE[0], CANVAS_SIZE[1]);
     context.fillStyle = 'hotPink';
+    context.fill();
+    context.lineWidth = 1;
+    context.strokeStyle = 'black';
     snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
     context.fillStyle = 'cyan';
     context.fillRect(apple[0], apple[1], 1, 1);

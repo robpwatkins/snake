@@ -88,6 +88,9 @@ const App = () => {
     context.fill();
     context.lineWidth = 1;
     context.strokeStyle = 'black';
+    // context.beginPath();
+    // context.rect(1, 1, 1, 1);
+    // context.stroke();
     snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
     context.fillStyle = 'cyan';
     context.fillRect(apple[0], apple[1], 1, 1);

@@ -93,7 +93,7 @@ const App = () => {
     // context.stroke();
     snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
     context.fillStyle = 'cyan';
-    context.fillRect(apple[0], apple[1], 1, 1);
+    context.strokeRect(apple[0], apple[1], 1, 1);
   }, [snake, apple, gameOver])
 
   return (
@@ -104,7 +104,7 @@ const App = () => {
         height={`${CANVAS_SIZE[1]}px`}
       />
       {gameOver && <div>GAME OVER!</div>}
-      <button onClick={startGame}>START GAMeeeE</button>
+      <button onClick={startGame}>START GAMeeeEEEEE</button>
     </div>
   )
 }

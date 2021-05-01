@@ -93,7 +93,7 @@ const App = () => {
     // context.stroke();
     snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
     context.fillStyle = 'cyan';
-    context.strokeRect(apple[0], apple[1], 1, 1);
+    context.strokeRect(apple[0], apple[1], 1, 0);
   }, [snake, apple, gameOver])
 
   return (
